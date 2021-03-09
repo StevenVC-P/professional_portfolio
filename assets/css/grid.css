@@ -1,0 +1,155 @@
+/*
+  If you wish to use this styling, you should load this 
+  sheet as-is, second only to any reset file you're using.
+
+  I would copy the test styles to another stylesheet so you 
+  can adjust them however you like.
+
+  In one of your site-specific style sheets you'll want to have 
+  media queries that will dictate how your layout behaves as the 
+  screen resizes. See site.css.
+
+  My breakpoints are based on these values, which are pretty standard:
+    640px
+    768px
+    1024px
+    1280px
+    1536px
+*/
+
+/* end of testing styles */
+
+/* .container {
+  margin: 0 auto; 
+  padding: 0 1px;
+}
+
+.container.centered {
+  width: 90%;
+} */
+
+.row {
+  position: relative; 
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-grow: 0; 
+  flex-shrink: 0; 
+  align-items: normal; 
+  justify-content: flex-start; 
+  margin-right: 0;
+}
+
+.column {
+  position: relative; 
+  min-height: 1px; 
+  padding-left: 0; 
+  padding-right: 0; 
+  right: auto; 
+  left: auto; 
+  margin-left: 0;
+  border-radius: 10px;
+
+}
+
+.column.span-1 {
+  width: 8.3333%; 
+  max-width: 8.3333%; 
+  flex: 0 0 8.3333%;
+}
+
+.column.span-2 {
+  width: 16.666%; 
+  max-width: 16.666%; 
+  flex: 0 0 16.666%;
+}
+
+.column.span-3 {
+  width: 25%; 
+  max-width: 25%; 
+  flex: 0 0 25%;
+}
+
+.column.span-4 {
+  width: 33.333%; 
+  max-width: 33.333%; 
+  flex: 0 0 33.333%;
+}
+
+.column.span-5 {
+  width: 41.666%; 
+  max-width: 41.666%; 
+  flex: 0 0 41.666%;
+}
+
+.column.span-6 {
+  width: 50%; 
+  max-width: 50%; 
+  flex: 0 0 50%;
+}
+
+.column.span-7 {
+  width: 58.333%; 
+  max-width: 58.333%; 
+  flex: 0 0 58.333%;
+}
+
+.column.span-8 {
+  width: 66.666%; 
+  max-width: 66.666%; 
+  flex: 0 0 66.666%;
+}
+
+.column.span-9 {
+  width: 75%; 
+  max-width: 75%; 
+  flex: 0 0 75%;
+}
+
+.column.span-10 {
+  width: 83.333%; 
+  max-width: 83.333%; 
+  flex: 0 0 83.333%;
+}
+
+.column.span-11 {
+  width: 91.666%; 
+  max-width: 91.666%; 
+  flex: 0 0 91.666%;
+}
+
+.column.span-12 {
+  width: 100%; 
+  max-width: 100%; 
+  flex: 0 0 100%;
+}
+
+
+@media (max-width: 640px) { 
+  .container {
+    max-width: 640px;
+  }
+} 
+
+@media (min-width: 641px) and (max-width: 768px){ 
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){ 
+  .container {
+    max-width: 1024px; 
+  }
+} 
+
+@media (min-width: 1025px) and (max-width: 1280px){ 
+  .container {
+    max-width: 1280px; 
+  }
+} 
+
+@media( min-width: 1281px ){ 
+  .container {
+    min-width: 1281px; 
+  }
+}

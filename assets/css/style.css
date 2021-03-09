@@ -1,21 +1,30 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    scroll-behavior: smooth;
+
 }
+
+body{
+    background-color:darkslategray;
+    margin: 0;
+}
+
+/*Header*/
 
 header{
     border: deepskyblue 5px solid;
-    height: 150px;
-    width: 100%;git 
-    margin-bottom: 25px;
+    padding: 40px;
     background-color: blue;
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
    
 }
 
 header h1 {
     text-align: center;
+    background-color: blue;
 }
 
 header p{
@@ -26,67 +35,70 @@ header p{
     font-size: 10px;
 }
 
-aside {
-    position: fixed;
-    height:1000px;
-    width: 20%;
-    max-width: 150px;
-    background-color: darkslategray;
-    border: green 2px solid;
+/*Main*/
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-  nav a {
+nav a {
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
-  }
+    margin: 5px;
+}
 
 main {
-    position: absolute;
-    left: 150px;
+    position:relative;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 article {
     padding: 10px;
     background-color: darkslategray;
     border: green 2px solid;
+    border-radius: 10px;
+
 }
 
 article p {
     text-indent: 20px;
 }
 
-#work{
-    flex: 10;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    height: 400px;
-    width: 25%;
-
-    text-align: center;
+#work_h2, {
+    position: absolute;
+    top: 0;
+    left: 8px;
 }
 
 .projects {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
+    margin: 50px 5px 0px 5px;
+    min-height: 200px;
+    text-align: center;
+}
 
+.card {
+}
+
+/*Created from instructors flex grid system*/
+
+.card:hover {
+    box-shadow: 0 0 10px #000 inset;
 }
 
 #project_1{
     background-color: coral;
-
 }
 
 #project_2{
     background-color: chocolate;
-
 }
 
 #project_3{

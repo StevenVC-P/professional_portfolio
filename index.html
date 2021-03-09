@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <title>Steven's Portfolio</title>
 </head>
 <body>
     <header>
         <h1>Steven Van Court</h1>
     </header>
-    <aside>
-        <nav>
-            <a href="#">About Me</a>
-            <a href="#">Work</a>
-            <a href="#">Contact Me</a>
-            <a href="#">Resume</a>
-            <a href="#">Hobbies</a>
-          </nav>
-    </aside>
+
     <main>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+            <a href="#resume">Resume</a>
+            <a href="#hobbies">Hobbies</a>
+        </nav>
+
         <article id="about">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis, velit in sollicitudin vehicula, sem diam auctor lectus, eget commodo urna 
@@ -31,27 +32,34 @@
                 magna. Nulla aliquet faucibus sapien non convallis. Integer venenatis porttitor lectus.</p>
         </article>
 
-        <article id="work">
-            <h2>Work</h2>
-            <div class="projects" id="project_1">
-                <h3>Project 1</h3>
-            </div>
-            <div class="projects" id="project_2">
-                <h3>Project 2</h3>
-            </div>
-            <div class="projects" id="project_3">
-                <h3>Project 3</h3>
-            </div>
-            <div class="projects" id="project_4">
-                <h3>Project 4</h3>
-            </div>
+        <article class="container centered">
+                <h2 id="work_h2">Work</h2>
+                <div class="row projects card" id="project_1">
+                    <div class="column span-12">
+                        <h3>Project 1</h3>
+                    </div>
+                </div>
+                
+                <div class="row projects">
+                    <div class="column span-4 card" id="project_2">
+                        <h3>Project 2</h3>
+                    </div>
+
+                    <div class="column span-4 card" id="project_3">
+                        <h3>Project 3</h3>
+                    </div>
+                    
+                    <div class="column span-4 card" id="project_4">
+                        <h3>Project 4</h3>
+                    </div>
+                </div>
+
         </article>
 
         <article id="contact">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum mi augue, in euismod libero elementum non. Duis accumsan nibh at nisl convallis, vel bibendum lacus consequat. 
-                Curabitur porta at tellus ac euismod. Aliquam auctor fermentum lectus, ut consequat sapien posuere eget. Cras sed commodo quam. Quisque malesuada dictum libero a commodo. Morbi 
-                accumsan placerat lacus id convallis. Phasellus sollicitudin massa eget quam ornare volutpat.</p>
+            <h2>Contact Me!</h2>
+            <p> Cell Phone: 715-864-0930  E-mail:Steven.VanCourt@gmail.com </p>
+            <p> Address: 101 99th Ave. NW, Coon Rapids, MN</p>
         </article>
 
         <article id="resume">
