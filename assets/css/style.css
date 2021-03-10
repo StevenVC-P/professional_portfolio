@@ -1,7 +1,7 @@
 * {
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    box-sizing: border-box;
 }
 
 body{
@@ -11,47 +11,37 @@ body{
 
 /*Header*/
 
-header{
+.header{
+    display: flex;
+    justify-content:space-evenly;
     border: deepskyblue 5px solid;
     padding: 40px;
     background-color: blue;
-    background-size: cover;
-    background-position: center;
     border-radius: 10px;
-    height: 100px;
 }
 
-header h1 {
-    text-align: center;
+.header h1 {
     background-color: blue;
-    position: relative;
-    top: 18px;
-    left: 10px;
 }
 
-header img{
-    position: absolute;
-    top: 50px;
-    left: 800px;
-    display: block;
-    width: 50%;
+.header img{
     width: 125px;
     height: 125px;
+    border-radius: 10px;
 }
+
+/*aside*/
 
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
-/*Main*/
-
 nav{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     float: left;
-
 }
 
 nav a {
@@ -60,6 +50,8 @@ nav a {
     text-align: center;
     margin: 5px;
 }
+
+/*Main*/
 
 main {
     position:relative;
@@ -87,16 +79,18 @@ article p {
 }
 
 .projects {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
+    justify-content: space-evenly;
     margin: 50px 5px 0px 5px;
     min-height: 200px;
     text-align: center;
+    border-radius: 10px;
+
 }
-
-
-/*Created from instructors flex grid system*/
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
 
 .card:hover {
     box-shadow: 0 0 10px #000 inset;
@@ -118,3 +112,27 @@ article p {
     background-color: brown;
 }
 
+
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%; 
+        max-width: 100%; 
+        flex: 0 0 100%;
+    }
+
+    .float-left {
+        float:none;
+        margin-right: 0;
+    }
+
+    nav{
+        flex-direction: row;
+        float: none;
+    }
