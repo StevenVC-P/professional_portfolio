@@ -136,6 +136,13 @@
   }
 }
 
+.column.span-4 {
+  width: 100%; 
+  max-width: 100%; 
+  flex: 0 0 100%;
+}
+}
+
 @media (min-width: 769px) and (max-width: 1024px){ 
   .container {
     max-width: 1024px; 

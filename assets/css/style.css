@@ -80,7 +80,7 @@ article p {
 
 .projects {
     justify-content: space-evenly;
-    margin: 50px 5px 0px 5px;
+    margin: 5px;
     min-height: 200px;
     text-align: center;
     border-radius: 10px;
@@ -90,6 +90,9 @@ article p {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    min-width: 200px;
+    min-height: 300px;
+    margin: 5px;
 }
 
 .card:hover {
